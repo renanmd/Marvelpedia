@@ -18,6 +18,7 @@
 		326FFB5D2404415100E7F5D4 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB5C2404415100E7F5D4 /* Character.swift */; };
 		326FFB5F240445DF00E7F5D4 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB5E240445DF00E7F5D4 /* BaseResponse.swift */; };
 		326FFB612404478400E7F5D4 /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB602404478400E7F5D4 /* BaseData.swift */; };
+		326FFB9F240584B100E7F5D4 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB9E240584B100E7F5D4 /* Thumbnail.swift */; };
 		C71C373F29188B94358B1E0D /* Pods_Marvelpedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFB883D3EA4C4B2ADD348EC /* Pods_Marvelpedia.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		326FFB5C2404415100E7F5D4 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		326FFB5E240445DF00E7F5D4 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		326FFB602404478400E7F5D4 /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
+		326FFB9E240584B100E7F5D4 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		862D925C8AB2C49E76653BD2 /* Pods-Marvelpedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelpedia.debug.xcconfig"; path = "Target Support Files/Pods-Marvelpedia/Pods-Marvelpedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 				326FFB5C2404415100E7F5D4 /* Character.swift */,
 				326FFB5E240445DF00E7F5D4 /* BaseResponse.swift */,
 				326FFB602404478400E7F5D4 /* BaseData.swift */,
+				326FFB9E240584B100E7F5D4 /* Thumbnail.swift */,
 			);
 			path = MarvelModels;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				326FFB5D2404415100E7F5D4 /* Character.swift in Sources */,
 				326FFB5F240445DF00E7F5D4 /* BaseResponse.swift in Sources */,
 				326FFB5A2404359F00E7F5D4 /* MarvelService.swift in Sources */,
+				326FFB9F240584B100E7F5D4 /* Thumbnail.swift in Sources */,
 				326FFB39240431AB00E7F5D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
