@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		326FFB37240431AB00E7F5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB36240431AB00E7F5D4 /* AppDelegate.swift */; };
 		326FFB39240431AB00E7F5D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB38240431AB00E7F5D4 /* SceneDelegate.swift */; };
-		326FFB3B240431AB00E7F5D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB3A240431AB00E7F5D4 /* ViewController.swift */; };
+		326FFB3B240431AB00E7F5D4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB3A240431AB00E7F5D4 /* FirstViewController.swift */; };
 		326FFB3E240431AB00E7F5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326FFB3C240431AB00E7F5D4 /* Main.storyboard */; };
 		326FFB40240431AD00E7F5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326FFB3F240431AD00E7F5D4 /* Assets.xcassets */; };
 		326FFB43240431AD00E7F5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326FFB41240431AD00E7F5D4 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,7 @@
 		326FFB5F240445DF00E7F5D4 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB5E240445DF00E7F5D4 /* BaseResponse.swift */; };
 		326FFB612404478400E7F5D4 /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB602404478400E7F5D4 /* BaseData.swift */; };
 		326FFB9F240584B100E7F5D4 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326FFB9E240584B100E7F5D4 /* Thumbnail.swift */; };
+		3290526C240C00C80061FAC5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290526B240C00C80061FAC5 /* SecondViewController.swift */; };
 		C71C373F29188B94358B1E0D /* Pods_Marvelpedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFB883D3EA4C4B2ADD348EC /* Pods_Marvelpedia.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +39,7 @@
 		326FFB33240431AB00E7F5D4 /* Marvelpedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvelpedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326FFB36240431AB00E7F5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		326FFB38240431AB00E7F5D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		326FFB3A240431AB00E7F5D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		326FFB3A240431AB00E7F5D4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		326FFB3D240431AB00E7F5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		326FFB3F240431AD00E7F5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		326FFB42240431AD00E7F5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		326FFB5E240445DF00E7F5D4 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		326FFB602404478400E7F5D4 /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
 		326FFB9E240584B100E7F5D4 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		3290526B240C00C80061FAC5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		862D925C8AB2C49E76653BD2 /* Pods-Marvelpedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelpedia.debug.xcconfig"; path = "Target Support Files/Pods-Marvelpedia/Pods-Marvelpedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +101,8 @@
 			children = (
 				326FFB36240431AB00E7F5D4 /* AppDelegate.swift */,
 				326FFB38240431AB00E7F5D4 /* SceneDelegate.swift */,
-				326FFB3A240431AB00E7F5D4 /* ViewController.swift */,
+				326FFB3A240431AB00E7F5D4 /* FirstViewController.swift */,
+				3290526B240C00C80061FAC5 /* SecondViewController.swift */,
 				326FFB3C240431AB00E7F5D4 /* Main.storyboard */,
 				326FFB3F240431AD00E7F5D4 /* Assets.xcassets */,
 				326FFB41240431AD00E7F5D4 /* LaunchScreen.storyboard */,
@@ -300,8 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				326FFB612404478400E7F5D4 /* BaseData.swift in Sources */,
-				326FFB3B240431AB00E7F5D4 /* ViewController.swift in Sources */,
+				326FFB3B240431AB00E7F5D4 /* FirstViewController.swift in Sources */,
 				326FFB37240431AB00E7F5D4 /* AppDelegate.swift in Sources */,
+				3290526C240C00C80061FAC5 /* SecondViewController.swift in Sources */,
 				326FFB5D2404415100E7F5D4 /* Character.swift in Sources */,
 				326FFB5F240445DF00E7F5D4 /* BaseResponse.swift in Sources */,
 				326FFB5A2404359F00E7F5D4 /* MarvelService.swift in Sources */,

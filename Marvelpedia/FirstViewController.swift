@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  Marvelpedia
 //
 //  Created by Renan Diniz on 24/02/20.
@@ -8,10 +8,16 @@
 
 import UIKit
 import SDWebImage
+import os.log
 
-class ViewController: UIViewController {
+var myImageData  = URL(string: "")
+var imageUrl = URL(string: "")
+class FirstViewController: UIViewController {
     
     @IBOutlet private var tableViewCharacters: UITableView!
+    @IBAction func passData(_ sender: Any) {
+        myImageData = imageUrl
+    }
     
     private var characters: [Character] = []
     private let placeHolderImage = UIImage(named: "Marvel-PlaceHolder")
@@ -30,11 +36,11 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate {
+extension FirstViewController: UITableViewDelegate {
     
 }
 
-extension ViewController: UITableViewDataSource {
+extension FirstViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -57,7 +63,7 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = character.name
         cell.detailTextLabel?.text = character.description
         
-        if let imageUrl = URL(string: fullPath) {
+        if imageUrl == URL(string: fullPath) {
             cell.imageView?.sd_setImage(with: imageUrl, placeholderImage: self.placeHolderImage)
         } else {
             cell.imageView?.image = nil
@@ -65,5 +71,14 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        super.prepare(for: segue, sender: sender)
+//        //Configure the destination view controller only when the characterCell is presses.
+//        guard let characterCell = sender as? UITableViewCell, characterCell === characterCell else {
+//            os_log("The characterCell was not pressed, cancelling.", log: OSLog.default, type: .debug)
+//            return
+//        }
+//        
+//        
+//    }
 }
