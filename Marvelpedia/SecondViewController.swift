@@ -10,19 +10,21 @@ import Foundation
 import UIKit
 import SDWebImage
 
-//var imageDataURL = ""
-
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var imageDisplay: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    var character: Character?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //imageDisplay.image = UIImage(named: myImageData)
-        //imageDisplay.image = UIImage(named: "Marvel-PlaceHolder")
-        //cell.imageView?.sd_setImage(with: imageUrl, placeholderImage: self.placeHolderImage)
-        imageDisplay.image = UIImage.sd_image(with: myImageData)
+        //imageDisplay.image = UIImage(named: character?.thumbnail)
+        
+        nameLabel.text = character?.name
+        descriptionLabel.text = character?.description
         
     }
 }

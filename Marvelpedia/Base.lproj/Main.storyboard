@@ -79,7 +79,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-YM-wh8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel-PlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-YM-wh8">
                                 <rect key="frame" x="87" y="112" width="240" height="317"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="317" id="EqB-Ru-rTK"/>
@@ -91,8 +91,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zw-Ke-Gxo">
-                                <rect key="frame" x="186" y="482" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Zw-Ke-Gxo">
+                                <rect key="frame" x="87" y="482" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,12 +106,16 @@
                             <constraint firstItem="Hkn-GB-gUd" firstAttribute="top" secondItem="f2h-YM-wh8" secondAttribute="bottom" constant="8" id="LPM-kS-Say"/>
                             <constraint firstItem="f2h-YM-wh8" firstAttribute="centerX" secondItem="9Zw-Ke-Gxo" secondAttribute="centerX" id="clk-SC-9dZ"/>
                             <constraint firstItem="9Zw-Ke-Gxo" firstAttribute="top" secondItem="Hkn-GB-gUd" secondAttribute="bottom" constant="24" id="lqu-gF-kjW"/>
+                            <constraint firstItem="9Zw-Ke-Gxo" firstAttribute="leading" secondItem="vSL-9G-vwy" secondAttribute="leading" constant="87" id="mCu-Fe-7UR"/>
                             <constraint firstItem="vSL-9G-vwy" firstAttribute="trailing" secondItem="f2h-YM-wh8" secondAttribute="trailing" constant="87" id="qpx-ZD-Abc"/>
+                            <constraint firstItem="vSL-9G-vwy" firstAttribute="trailing" secondItem="9Zw-Ke-Gxo" secondAttribute="trailing" constant="87" id="ufa-KD-HX8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vSL-9G-vwy"/>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel" destination="9Zw-Ke-Gxo" id="hLQ-Ky-pZu"/>
                         <outlet property="imageDisplay" destination="f2h-YM-wh8" id="T1L-5J-mqf"/>
+                        <outlet property="nameLabel" destination="Hkn-GB-gUd" id="Jax-7b-Lra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y65-a7-tlc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -137,4 +141,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="98.4375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Marvel-PlaceHolder" width="1080" height="1080"/>
+    </resources>
 </document>

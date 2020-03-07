@@ -10,17 +10,12 @@ import UIKit
 import SDWebImage
 import os.log
 
-var myImageData  = URL(string: "")
-var imageUrl = URL(string: "")
 class FirstViewController: UIViewController {
     
     @IBOutlet private var tableViewCharacters: UITableView!
-    @IBAction func passData(_ sender: Any) {
-        myImageData = imageUrl
-    }
     
-    private var characters: [Character] = []
-    private let placeHolderImage = UIImage(named: "Marvel-PlaceHolder")
+    var characters: [Character] = []
+    let placeHolderImage = UIImage(named: "Marvel-PlaceHolder")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +58,7 @@ extension FirstViewController: UITableViewDataSource {
         cell.textLabel?.text = character.name
         cell.detailTextLabel?.text = character.description
         
-        if imageUrl == URL(string: fullPath) {
+        if let imageUrl = URL(string: fullPath) {
             cell.imageView?.sd_setImage(with: imageUrl, placeholderImage: self.placeHolderImage)
         } else {
             cell.imageView?.image = nil
@@ -71,14 +66,9 @@ extension FirstViewController: UITableViewDataSource {
         return cell
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        super.prepare(for: segue, sender: sender)
-//        //Configure the destination view controller only when the characterCell is presses.
-//        guard let characterCell = sender as? UITableViewCell, characterCell === characterCell else {
-//            os_log("The characterCell was not pressed, cancelling.", log: OSLog.default, type: .debug)
-//            return
-//        }
-//        
-//        
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? SecondViewController {
+            destination.character = characters[(tableViewCharacters.indexPathForSelectedRow?.row)!]
+        }
+    }
 }
