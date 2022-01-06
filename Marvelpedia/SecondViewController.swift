@@ -17,6 +17,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var character: Character?
+    let placeHolderImage = UIImage(named: "Marvel-PlaceHolder")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +27,25 @@ class SecondViewController: UIViewController {
         nameLabel.text = character?.name
         descriptionLabel.text = character?.description
         
+        if let character = self.character {
+            let fullPath = (character.thumbnail?.path ?? "") + "/portrait_xlarge." + (character.thumbnail?.imageExtension ?? "")
+
+            if let imageUrl = URL(string: fullPath) {
+                imageDisplay.sd_setImage(with: imageUrl, placeholderImage: self.placeHolderImage)
+            } else {
+                imageDisplay.image = nil
+            }
+        }
     }
 }
+
+
+//if let character = self.character {
+//    let fullPath = (character.thumbnail?.path ?? "") + "/portrait_xlarge." + (character.thumbnail?.imageExtension ?? "")
+//
+//    if let imageUrl = URL(string: fullPath) {
+//        imageDisplay.sd_setImage(with: imageUrl, placeholderImage: self.placeHolderImage)
+//    } else {
+//        imageDisplay.image = nil
+//    }
+//}

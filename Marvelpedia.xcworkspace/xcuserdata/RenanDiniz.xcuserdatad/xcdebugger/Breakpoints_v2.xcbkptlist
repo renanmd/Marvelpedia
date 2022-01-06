@@ -3,4 +3,54 @@
    uuid = "B30B4962-ACBC-4931-85A3-85AC7FC44968"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F71C1FBD-D3C1-4FC3-B081-DDCB4E0E0464"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Marvelpedia/FirstViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F71C1FBD-D3C1-4FC3-B081-DDCB4E0E0464 - aedd7fe329344c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Marvelpedia.FirstViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "Marvelpedia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/RenanDiniz/Documents/GitHub/Marvelpedia/Marvelpedia/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "F71C1FBD-D3C1-4FC3-B081-DDCB4E0E0464 - aedd7fe329344c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Marvelpedia.FirstViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "Marvelpedia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/RenanDiniz/Documents/GitHub/Marvelpedia/Marvelpedia/FirstViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "1076">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
